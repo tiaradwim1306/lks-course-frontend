@@ -1,8 +1,28 @@
 # Course App - Frontend
 
 ## Environment Setup
-create front-end with userdata
+### 1st Option - Server Deployment
+```sh
+# Install all Depedencies
+$ npm install
+# Firstly You need to run this command to create .nuxt directory with everything inside ready to start
+$ npm run build 
+# Start your client apps in server-side production mode
+$ npm run start 
+```
 
+### 2nd Option - Static Deployment (Pre-rendered)
+> Gives you the ability to host your web application on any static hosting (Nginx or Apache2 ect), the static source code will be generated in *dist folder*
+
+```sh
+# Install all Depedencies
+$ npm install
+# Generate static source code
+$ npm run generate # Use --prefix <your_path> for specific path and use --quite or --slient for suppressing the output of npm
+# Then you can use your web server enggine that you love to run it.
+
+### deploy on EC2 instance
+create front-end with userdata
 ```sh
 #!/bin/bash
 echo "step1.install dependencies"
