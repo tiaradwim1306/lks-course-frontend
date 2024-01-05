@@ -1,7 +1,7 @@
 # Course App - Frontend
 
 ## Environment Setup
-### 1st Option - Server Deployment
+> ### 1st Option - Server Deployment
 ```sh
 # Install all Depedencies
 $ npm install
@@ -11,8 +11,8 @@ $ npm run build
 $ npm run start 
 ```
 
-### 2nd Option - Static Deployment (Pre-rendered)
-> Gives you the ability to host your web application on any static hosting (Nginx or Apache2 ect), the static source code will be generated in *dist folder*
+> ### 2nd Option - Static Deployment (Pre-rendered)
+Gives you the ability to host your web application on any static hosting (Nginx or Apache2 ect), the static source code will be generated in *dist folder*
 
 ```sh
 # Install all Depedencies
@@ -20,9 +20,10 @@ $ npm install
 # Generate static source code
 $ npm run generate # Use --prefix <your_path> for specific path and use --quite or --slient for suppressing the output of npm
 # Then you can use your web server enggine that you love to run it.
+```
 
-### deploy on EC2 instance
-create front-end with userdata
+> ### Deploying
+deploy front end on EC2 instance with Amazon Linux 5.10 with Userdata
 ```sh
 #!/bin/bash
 echo "step1.install dependencies"
